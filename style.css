@@ -25,11 +25,10 @@ section {
   padding: 20px;
   flex-direction: column;
 }
-form{
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 section.alternate-background {
@@ -40,6 +39,10 @@ section.alternate-background {
 main img {
   width: 100%;
   padding-bottom: 20px;
+}
+
+#host img {
+  margin-top: 25px;
 }
 
 /* ---  Groups & Items --- */
@@ -70,7 +73,6 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
-  flex-wrap: wrap;
 }
 
 header nav ul li {
@@ -98,10 +100,9 @@ form label {
   font-weight: bold;
 }
 
-form select,
-form input {
-  margin-bottom: 20px;
-  width: 180px;
+form div {
+  display: flex;
+  justify-content: space-between;
 }
 
 form button {
@@ -128,62 +129,113 @@ footer p {
 /* -------  Media Query ------- */
 
 @media (min-width: 480px) {
- /* header{
-    display: flex;
-    flex-direction: row;
-  }*/
-
-  .logo{
+  .logo {
     font-size: 40px;
     display: flex;
     align-content: center;
     padding-bottom: 15px;
   }
 
-  header{
+  header {
     height: 50px;
     display: flex;
     padding: 0 30px;
     justify-content: space-between;
   }
 
-  h1{
+  h1 {
     font-size: 42px;
     margin: 14px 0px;
     padding-top: 6px;
   }
-  
-  /*header nav{
-    margin-top: 14px;
-  }*/
+
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
 
   header nav ul {
     display: flex;
     flex-direction: row;
   }
 
-  .group{
+  .group {
     flex-direction: row;
     align-items: center;
   }
 
-  form{
+  form {
     display: flex;
     flex-direction: row;
-    align-items: space-between;
   }
 
-  form select,
+  .form-section {
+    flex: 1;
+    margin: 0 8px;
+    display: block;
+  }
+
+  label {
+    display: block;
+  }
+
+  input {
+    display: block;
+    width: 75%;
+  }
+
+  /*form select,
   form input {
     margin-bottom: 0px;
     width: 180px;
+  }*/
+
+  h2 {
+    margin: 0 10px 20px 10px;
   }
 
-  .about{
+  .about-section {
     display: flex;
+  }
+
+  .about-img {
+    flex: 2;
+    margin-right: 25px;
+  }
+
+  .about-p {
+    display: flex;
+    flex: 3;
+    align-items: center;
+    font-size: medium;
+  }
+
+  .ideas-section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ideas-column {
+    flex: 2;
+    margin-right: 15px;
+  }
+
+  .host-section {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+  }
+
+  .host-div {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .host-div-text {
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    flex: 1;
-
-
   }
 }
