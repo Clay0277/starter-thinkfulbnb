@@ -28,7 +28,6 @@ section {
 form {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 section.alternate-background {
@@ -65,7 +64,7 @@ main img {
 
 header {
   background-color: #ff385c;
-  padding: 20px 20px 0 20px;
+  padding: 20px 30px 0 30px;
   text-align: center;
 }
 
@@ -73,6 +72,15 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 5% 10% 0;
 }
 
 header nav ul li {
@@ -82,7 +90,7 @@ header nav ul li {
 header nav ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 0 20px 0 0;
+  padding: 0 20px;
 }
 
 header nav ul li a:hover {
@@ -98,11 +106,26 @@ form {
 
 form label {
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5%;
+  flex: 1;
+}
+
+form input {
+  margin: 20px 0px;
+  flex: 2;
+  margin-right: 5%;
+}
+
+select {
+  flex: 2;
+  margin: 5% 5% 5% 0;
 }
 
 form div {
   display: flex;
-  justify-content: space-between;
 }
 
 form button {
@@ -112,6 +135,7 @@ form button {
   font-size: 24px;
   padding: 15px;
   width: 100%;
+  margin-top: 20px;
 }
 
 /* -------  Footer ------- */
@@ -182,6 +206,10 @@ footer p {
   input {
     display: block;
     width: 75%;
+  }
+
+  select {
+    margin-top: 20px;
   }
 
   h2 {
