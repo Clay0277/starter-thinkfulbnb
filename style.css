@@ -25,9 +25,9 @@ section {
   padding: 20px;
   flex-direction: column;
 }
+
 form {
-  display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 section.alternate-background {
@@ -72,13 +72,13 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
+  padding-top: 3px;
   display: flex;
   justify-content: center;
 }
 
 .nav-menu {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   padding: 0 5% 10% 0;
 }
@@ -197,6 +197,7 @@ footer p {
     flex: 1;
     margin: 0 8px;
     display: block;
+    flex-wrap: wrap;
   }
 
   label {
