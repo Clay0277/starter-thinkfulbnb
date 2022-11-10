@@ -1,5 +1,9 @@
 /* -------  General Styles ------- */
 
+html{
+  display: flex;
+}
+
 body {
   font-family: "Lato", sans-serif;
 }
@@ -224,6 +228,9 @@ footer p {
   .about-img {
     flex: 2;
     margin-right: 25px;
+    display: flex;
+    align-items: center;
+}
   }
 
   .about-p {
